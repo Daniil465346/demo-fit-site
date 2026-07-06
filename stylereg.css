@@ -1,0 +1,113 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "TunnelFront", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form {
+  width: 400px;
+  max-width: 90%;
+  margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+.login-title {
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  color: #4a00e0;
+}
+
+.login-input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-input[name="email"] {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%234a00e0' class='bi bi-envelope' viewBox='0 0 16 16'%3E%3Cpath d='M14 3H2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2zM2 5l6 4.5L14 5v8H2V5zm6.5 4.5L2 13V9.236l6.5 4.264zm.5 0L14 13V9.236L8.5 9.5z'/%3E%3C/svg%3E") no-repeat;
+  background-position: 10px center;
+  background-size: 16px 16px;
+  padding-left: 40px;
+}
+
+
+.login-input[type="password"] {
+
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%234a00e0' class='bi bi-lock' viewBox='0 0 16 16'%3E%3Cpath d='M8 1a2 2 0 00-2 2v4h4V3a2 2 0 00-2-2zm3 6V3a3 3 0 10-6 0v4a2 2 0 00-2 2v5a2 2 0 002 2h6a2 2 0 002-2V9a2 2 0 00-2-2zm-5 4.5a.5.5 0 01-1 0v-2a.5.5 0 011 0v2zm3 0a.5.5 0 01-1 0v-2a.5.5 0 011 0v2z'/%3E%3C/svg%3E") no-repeat;
+  background-position: 10px center;
+  background-size: 16px 16px;
+  padding-left: 40px;
+}
+
+
+.login-button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: #5119c2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  transform: scale(0.85);
+}
+
+
+.link {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 14px;
+  color: #4a00e0;
+}
+
+.link a {
+  text-decoration: none;
+  color: #4a00e0;
+}
+
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+
+.error {
+  display: none;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background: #f44336;
+  font-size: 14px;
+  text-align: center;
+}

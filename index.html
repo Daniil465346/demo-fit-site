@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фитнес-клуб CGR главная</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-image: url("background_2 1920-1080.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      h1 {
+        color: rgb(183, 183, 183);
+      }
+      .block {
+        margin-right: 100px; /* Добавьте отступы, если это необходимо */
+      }
+      .kruzhochek {
+        width: 60%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 0.5em;
+        margin-bottom: 2em;
+      }
+      .transparent50 {
+        filter: alpha(Opacity=50);
+        opacity: 0.5;
+      }
+      .transparent90 {
+        filter: alpha(Opacity=90);
+        opacity: 0.9;
+      }
+      .split-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .split-container > div {
+        width: calc(50% - 20px);
+      }
+      .transparent90 {
+        filter: alpha(Opacity=90);
+        opacity: 0.9;
+      }
+
+      @media (max-width: 768px) {
+        .split-container > div {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark transparent90">
+      <div class="container block">
+        <a class="navbar-brand p-0">
+          <img src="logo2.png" alt="html/Logo2" width="100" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.php">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutedit.html">Информация о нас</a>
+            </li>
+
+            <li class="nav-item border-start border-secondary-light">
+              <a class="nav-link" href="redirect.php">Профиль</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-success my-2 my-sm-0"
+                href="registration1.php"
+                type="submit"
+                >Зарегистрироваться</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="logout1.php">Выход из учетной записи</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 mx-auto">
+          <img
+            class="kruzhochek transparent50"
+            src="logo1.jpg"
+            alt="Ne zagruzilos blin"
+          />
+          <h1 class="fw-dark">Ganz Rechts</h1>
+          <p class="lead" style="color: white">Официальный сайт фитнес-клуба</p>
+          <a href="https://vk.com/" target="_blank" class="btn btn-primary">
+            Группа ВКонтакте
+          </a>
+          <a
+            href="https://chat.whatsapp.com/"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            Наш Whatsapp
+          </a>
+          <p class="lead" style="color: white">Последние публикации</p>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center my-80">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-8">
+        <div class="col">
+          <div class="card transparent50">
+            <img src="maincard1.jpg" class="card-img-top" alt="img" />
+            <div class="card-body">
+              <h5 class="card-title">Полностью оснащенный зал</h5>
+              <p class="card-text">
+                Широкий спектр оборудования
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card transparent50">
+            <img src="maincard2.jpg" class="card-img-top" alt="img" />
+            <div class="card-body">
+              <h5 class="card-title">Опытные тренеры</h5>
+              <p class="card-text">
+                Запишитесь на занятия под грамотным руководством
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card transparent50">
+            <img src="maincard3.jpg" class="card-img-top" alt="img" />
+            <div class="card-body">
+              <h5 class="card-title">Любите спорт</h5>
+              <p class="card-text">
+                Вдохновляйтесь и поднимайтесь на новые вершины вместе с нами!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+      history.replaceState(null, "", window.location.href);
+
+
+      window.onpopstate = function (event) {
+        history.go(0);
+      };
+    </script>
+  </body>
+</html>
